@@ -7,7 +7,8 @@
 
 @section('content')
 
-    <h1> Your cart </h1>
+    &nbsp;
+    <h2> Your cart </h2>
             
     <div class="card">
         <div class="card-body p-0">

@@ -77,8 +77,11 @@
   <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{url('main_content')}}" class="brand-link">
+      <img src="dist/img/OrdersManagerLogo.png" alt="Orders Manager Logo" class="brand-image img-square elevation-3"
+         style="opacity: .8">
       <span class="brand-text font-weight-light"><b>Orders Manager</b></span>
     </a>
+   
 
     <!-- Sidebar -->
     <div class="sidebar">

@@ -5,17 +5,8 @@
 <div class="row mt-5">
      &nbsp;
 </div>
-
-    <div class="card">
-        <div class="card-header border-transparent">
-            <h3 class="card-title">Registered users list</h3>
-        
-            <div class="card-tools">
-            <button type="button" class="btn btn-tool" data-card-widget="collapse">
-                <i class="fas fa-minus"></i>
-            </button>
-            </div>
-        </div>
+    <h2> Registered users list </h2>
+    <div class="card"> 
         <div class="card-body p-0">
         <div class="table-responsive table-hover table-striped">
             <table class="table m-0">
