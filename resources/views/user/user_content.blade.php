@@ -1,4 +1,4 @@
-@extends('admin.dashboard')
+@extends('user.dashboard')
 
 @section('content')
 
@@ -19,7 +19,7 @@
     <!-- TABLE: LATEST ORDERS -->
 <div class="card">
   <div class="card-header border-transparent">
-    <h3 class="card-title">Latest Orders</h3>
+    <h3 class="card-title">Your Latest Orders</h3>
 
     <div class="card-tools">
       <button type="button" class="btn btn-tool" data-card-widget="collapse">
@@ -36,8 +36,6 @@
           <th>Order ID</th>
           <th>Total</th>
           <th>Status</th>
-          <th>Rep ID</th>
-          <th>Buyer</th>
         </tr>
         </thead>
         <tbody>
@@ -56,8 +54,6 @@
               <span class="badge badge-danger">{{ ucfirst($order->status) }}</span>
               @endif
             </td>
-            <td> {{ $order->user_id }} </td>
-            <td> {{ $order->shipping_fullname }} </td>
           </tr>
           @endforeach
         </tbody>

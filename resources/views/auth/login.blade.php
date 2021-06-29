@@ -17,6 +17,11 @@
 <body class="hold-transition login-page dark-mode">
 <div class="login-box">
   <!-- /.login-logo -->
+<div class="d-flex justify-content-center p-3">
+  <img src="/dist/img/OrdersManagerLogo.png" class="brand-image img-square">
+</div>
+  
+
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
       <a href="{{url('/')}}" class="h1"><b>Orders Manager</b></a>
@@ -55,30 +60,22 @@
             @enderror
         </div>
         <div class="row">
-          <div class="col-8">
-            <div class="icheck-primary">
-                <input class="form-check-input" type="checkbox" name="remember" id="remember" {{ old('remember') ? 'checked' : '' }}>
-                <label class="form-check-label" for="remember">
-                    {{ __('Remember Me') }}
-                </label>
-            </div>
-          </div>
-          <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary">
+          <div class="col ">
+            <p class="mb-0">
+              @if (Route::has('register'))
+                      <a class="btn btn-link" href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Don't have an account?</a>
+              @endif
+            
+            <button type="submit" class="btn btn-info float-right">
                 {{ __('Login') }}
             </button>
-
+          </p>
             
           </div>
           <!-- /.col -->
         </div>
       </form>
-      <p class="mb-0">
-        @if (Route::has('register'))
-                <a class="btn btn-link" href="{{ route('register') }}" class="ml-4 text-sm text-gray-700 underline">Don't have an account?</a>
-        @endif
-      </p>
+      
     </div>
     <!-- /.card-body -->
   </div>

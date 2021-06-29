@@ -10,10 +10,10 @@ class DashboardController extends Controller
     public function index()
     {
         if ((Auth::user()->role) == 'user') {
-            return view('user/dashboard');
+            return redirect('user_content');
         }
         if ((Auth::user()->role) == 'admin') {
-            return view('admin/dashboard');
+            return redirect('main_content');
         }
     }
 }

@@ -17,7 +17,7 @@
   </a>
 </li>  
 <li class="nav-item">
-  <a href="{{url('dashboard')}}" class="nav-link">
+  <a href="{{url('orders')}}" class="nav-link">
     <i class="far fa-circle nav-icon"></i>
     <p>Orders</p>
   </a>
@@ -25,6 +25,12 @@
 <li class="nav-item">
   <a href="{{ url('users_list') }}" class="nav-link">
     <i class="far fa-circle nav-icon"></i>
-    <p>Users</p>
+    <p>Users list</p>
+  </a>
+</li> 
+<li class="nav-item">
+  <a href="{{ url('product') }}" class="nav-link">
+    <i class="far fa-circle nav-icon"></i>
+    <p>Products list</p>
   </a>
 </li> 

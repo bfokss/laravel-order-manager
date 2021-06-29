@@ -15,12 +15,16 @@
   <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
 </head>
 <body class="hold-transition register-page dark-mode">
+  <div class="d-flex justify-content-center p-3">
+    <img src="/dist/img/OrdersManagerLogo.png" class="brand-image img-square">
+  </div>
 <div class="register-box">
   <div class="card card-outline card-primary">
     <div class="card-header text-center">
       <a href="{{url('/register')}}" class="h1"><b>Orders Manager</b></a>
     </div>
     <div class="card-body">
+      
       <p class="login-box-msg">Register a new account</p>
 
       <form action="{{ route('register') }}" method="POST">
@@ -78,15 +82,16 @@
         </div>
         <div class="row">
           <!-- /.col -->
-          <div class="col-4">
-            <button type="submit" class="btn btn-primary">
+          <div class="col">
+            <a href="{{ route('login') }}" class="btn btn-link">I already have a membership</a>
+            <button type="submit" class="btn btn-info float-right">
                 {{ __('Register') }}
             </button>
           </div>
           <!-- /.col -->
         </div>
       </form>
-      <a href="{{ route('login') }}" class="btn btn-link">I already have a membership</a>
+      
     </div>
     <!-- /.form-box -->
   </div><!-- /.card -->

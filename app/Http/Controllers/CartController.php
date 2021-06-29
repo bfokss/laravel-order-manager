@@ -14,7 +14,7 @@ class CartController extends Controller
         //dd($product);
 
         Cart::session(Auth::user()->id)->add(array(
-            'id' => uniqid($product->id),
+            'id' => $product->id,
             'name' => $product->name,
             'price' => $product->price,
             'quantity' => 1,
@@ -31,7 +31,12 @@ class CartController extends Controller
     {
         $cartItems = Cart::session(Auth()->user()->id)->getContent();
 
-        return view('cart.index', ['cartItems' => $cartItems]);
+        if ((Auth::user()->role) == 'user') {
+            return view('user_cart.index', ['cartItems' => $cartItems]);
+        }
+        if ((Auth::user()->role) == 'admin') {
+            return view('cart.index', ['cartItems' => $cartItems]);
+        }
     }
 
     public function delete($itemId)
@@ -52,5 +57,15 @@ class CartController extends Controller
         ]);
 
         return back();
+    }
+
+    public function checkout()
+    {
+        if ((Auth::user()->role) == 'user') {
+            return view('user_cart.checkout');
+        }
+        if ((Auth::user()->role) == 'admin') {
+            return view('cart.checkout');
+        }
     }
 }

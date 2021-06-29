@@ -32,5 +32,35 @@ class ProductSeeder extends Seeder
             'price' => 103,
             'description' => 'Test description 3'
         ]);
+
+        DB::table('products')->insert([
+            'name' => 'Stand_4',
+            'price' => 104,
+            'description' => 'Test description 4'
+        ]);
+
+        DB::table('products')->insert([
+            'name' => 'Stand_5',
+            'price' => 105,
+            'description' => 'Test description 5'
+        ]);
+
+        DB::table('products')->insert([
+            'name' => 'Stand_6',
+            'price' => 106,
+            'description' => 'Test description 6'
+        ]);
+
+        DB::table('products')->insert([
+            'name' => 'Stand_7',
+            'price' => 107,
+            'description' => 'Test description 7'
+        ]);
+
+        DB::table('products')->insert([
+            'name' => 'Stand_8',
+            'price' => 108,
+            'description' => 'Test description 8'
+        ]);
     }
 }

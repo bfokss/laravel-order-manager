@@ -22,6 +22,7 @@
       <a href="{{url('/')}}" class="h1"><b>Orders Manager</b></a>
     </div>
     <div class="card-body">
+      
       <p class="login-box-msg">Sign in to your <b>Orders Manager</b> account</p>
 
       <form action="{{ route('login') }}" method="post">

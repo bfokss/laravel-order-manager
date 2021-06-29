@@ -6,13 +6,19 @@ use Illuminate\Http\Request;
 use DB;
 use App\Models\Product;
 use App\Models\User;
+use App\Models\Order;
 
 
 class AdminController extends Controller
 {
     public function home()
     {
-        return view('admin/main_content');
+
+        $orders = Order::limit(10)->orderBy('id', 'desc')->get();
+        //$orders = Order::all();
+        //dd($orders);
+
+        return view('admin/main_content', ['orders' => $orders]);
     }
 
     public function products()
@@ -24,7 +30,9 @@ class AdminController extends Controller
 
     public function orders()
     {
-        return view('admin/orders');
+        $orders = Order::all();
+
+        return view('admin/orders', ['orders' => $orders]);
     }
 
     public function users_list()
