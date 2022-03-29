@@ -35,7 +35,7 @@ Admin
     <li> Viewing products </li> 
     <li> Viewing users list </li> 
 </ol>
-
+ 
 ## Register
 <img src="screenshots/register.jpg" alt="register screen" width=480 height=270>
 
