@@ -52,7 +52,7 @@ class ProductController extends Controller
             'description' => request('description'),
         ]);
 
-        return redirect()->route('product.index');
+        return redirect()->route('products');
     }
 
     /**
@@ -65,12 +65,14 @@ class ProductController extends Controller
     {
         $product = Product::find($id);
 
-        if ((Auth::user()->role) == 'admin') {
-            return view('product.adminshow', ['product' => $product]);
-        }
-        if ((Auth::user()->role) == 'user') {
-            return view('product.usershow', ['product' => $product]);
-        }
+        return view('product.adminshow', ['product' => $product]);
+    }
+
+    public function user_show($id)
+    {
+        $product = Product::find($id);
+
+        return view('product.usershow', ['product' => $product]);
     }
 
     /**

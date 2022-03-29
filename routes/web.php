@@ -29,6 +29,7 @@ Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name
 Route::group(['middleware' => ['auth']], function () {
 
     Route::resource('orders', OrderController::class);
+    //Route::resource('product', ProductController::class);
 
 
     Route::get('/', function () {
@@ -54,7 +55,7 @@ Route::group(['middleware' => ['auth']], function () {
     //Products
     Route::get('/add_to_cart/{product}', [App\Http\Controllers\CartController::class, 'add'])->name('cart.add');
     Route::get('/users_products', [App\Http\Controllers\UserController::class, 'products'])->name('products');
-    Route::get('/product/{itemId}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
+    Route::get('/user_product/{itemId}', [App\Http\Controllers\ProductController::class, 'user_show'])->name('product.usershow');
 
     //Orders
     Route::get('/orders', [App\Http\Controllers\AdminController::class, 'orders'])->name('orders');
@@ -75,11 +76,13 @@ Route::group(['middleware' => ['auth', 'Admin']], function () {
 
     //Products
     Route::resource('product', ProductController::class);
-    //Route::get('/product/{itemId}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
-    //Route::get('/product/create', [App\Http\Controllers\ProductController::class, 'create'])->name('product.create');
+    /*
+    Route::get('/product/{itemId}', [App\Http\Controllers\ProductController::class, 'show'])->name('product.show');
+    Route::get('/product/create', [App\Http\Controllers\ProductController::class, 'create'])->name('product.create');
     Route::get('/product', [App\Http\Controllers\ProductController::class, 'store'])->name('product.store');
     Route::get('/product', [App\Http\Controllers\ProductController::class, 'index'])->name('product.index');
     Route::get('/product/{orderId}/edit', [App\Http\Controllers\ProductController::class, 'edit'])->name('product.edit');
     Route::post('/product/{itemId}', [App\Http\Controllers\ProductController::class, 'update'])->name('product.update');
     Route::delete('/product/{orderId}', [App\Http\Controllers\ProductController::class, 'destroy'])->name('product.destroy');
+    */
 });

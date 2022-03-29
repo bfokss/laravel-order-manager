@@ -47,7 +47,7 @@
           <!-- /.table-responsive -->
         </div>
         <div class="card-footer clearfix">
-            <a href="{{ route('product.create') }}" ><button class="btn btn-sm btn-info float-left"> Add new product </button> </a>
+            <a href="/product/create" ><button class="btn btn-sm btn-info float-left"> Add new product </button> </a>
         </div>
           <!-- /.card-footer -->
         

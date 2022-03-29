@@ -1,62 +1,113 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
-
 <p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
+    <img src="https://i.imgur.com/eVGQqRw.png" width="100" >
+    <br>
 </p>
+<h1 align="center"> Orders Manager </h1>
+<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="100"></a></p>
 
-## About Laravel
+    This is my final project for Laravel - MVC classes at Collegium da Vinci. 
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+    This application purpose is to take orders from clients by sales representatives and manage them by orders manager.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+# Functionalities
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+There are two types of users. Depending on user type you are able to do different things.
 
-## Learning Laravel
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+User
+<ol> 
+    <li> Registering an account </li>
+    <li> Logging to an account </li>
+    <li> Viewing, adding and removing products in cart </li>
+    <li> Placing orders </li>
+    <li> Viewing placed orders </li>
+    <li> Viewing products </li>  
+</ol>
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Admin
+<ol> 
+    <li> Logging to an account defined as Admin</li>
+    <li> Viewing, adding and removing products in cart </li>
+    <li> Placing orders </li>
+    <li> Viewing placed orders </li>
+    <li> Modifying users orders status </li>
+    <li> Adding, editing, deleting products </li>
+    <li> Viewing products </li> 
+    <li> Viewing users list </li> 
+</ol>
 
-## Laravel Sponsors
+## Register
+<img src="screenshots/register.jpg" alt="register screen" width=480 height=270>
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+![Register gif](https://media.giphy.com/media/SzrZwQN8BNNrCkdzb8/giphy.gif)
 
-### Premium Partners
+---
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
+## Login
+<img src="screenshots/login.jpg" alt="login screen" width=480 height=270>
 
-## Contributing
+---
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+## Main screens
 
-## Code of Conduct
+<i> Admin screen </i>
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+<img src="screenshots/admin_screen.jpg" alt="admin screen" width=480 height=270>
+<br><br>
 
-## Security Vulnerabilities
+<i> User screen </i>
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+<img src="screenshots/user_screen.jpg" alt="user screen" width=480 height=270>
 
-## License
+---
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Products
+
+<i> Products list </i>
+
+<img src="screenshots/products.jpg" alt="products screen" width=480 height=270>
+<br><br>
+
+<i> Product screen </i>
+
+<img src="screenshots/product.jpg" alt="product screen" width=480 height=270>
+
+---
+
+## Cart
+![Cart gif](https://media.giphy.com/media/PvzU9oNEvee3qw6IKT/giphy.gif)
+
+---
+
+## Orders
+
+<i> Placing order </i>
+
+![Placing order gif](https://media.giphy.com/media/VvvGuOZgSZmsXgUik6/giphy.gif)
+
+
+<i> Changing order status </i>
+
+![Changing order status gif](https://media.giphy.com/media/cXNa86FnHzR9ekAkTM/giphy.gif)
+
+<i> Deleting order </i>
+
+![Deleting order gif](https://media.giphy.com/media/3WOj8pIQISrWoex14S/giphy.gif)
+
+---
+
+# About
+
+<i>Author: <a href="https://github.com/bfokss">bfokss</a>
+
+<i>Used technologies :</i>
+
+<ul>
+    <li> Laravel <img src="screenshots/laravel_icon.png" width=20 height=20>  </li>
+    <li> Xampp <img src="screenshots/xampp_icon.png" width=20 height=20></li>
+    <li> Bootstrap <img src="screenshots/bootstrap_icon.png" width=25 height=20></li>
+    <li> AdminLTE <img src="screenshots/adminlte_icon.png" width=20 height=20></li>
+</ul>
+
+
+

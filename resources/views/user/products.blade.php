@@ -12,7 +12,7 @@
                 <div class="col-3 ">
                     
                     <div class="card text-center rounded">
-                        <a href="{{ route('product.show', $product['id']) }}">
+                        <a href="{{ route('product.usershow', $product['id']) }}">
                             <img class="card-img-top rounded" src=" {{ asset('default-product.jpg') }}" alt="Card image cap">
                             <div class="card-body">
                                 <h4 class="card-title"> {{$product['name']}} </h4>
